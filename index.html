@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene backgroundColor="color:#000000">
+
+            <a-sky src="images/gradient.jpeg"></a-sky>
+            <!--Wall-->
+            <a-plane
+            id="wall" 
+            src="./images/wall_bg.jpg" 
+            position="0 2.5 -3.3" 
+            rotation="0 0 0" 
+            width="5"
+            height="3"></a-plane> 
+
+            <!--Wall Frames-->
+            <a-plane
+            id="wall-poster-left"
+            src="./images/wall_poster1.png"
+            position="-0.8 2.2 -2"
+            rotation="0 0 0"
+            width="0.7"
+            height="1"> </a-plane>
+            
+            <a-plane
+            id="wall-poster-center"
+            src="./images/wall_poster2.png"
+            position="0 2.2 -2"
+            rotation="0 0 0"
+            width="0.7"
+            height="1"> </a-plane>
+
+            <a-plane
+            id="wall-poster-right"
+            src="./images/wall_poster1.png"
+            position="0.8 2.2 -2"
+            rotation="0 0 0"
+            width="0.7"
+            height="1"> </a-plane>
+
+            <!--Light-->
+            <a-cylinder position="0 2.9 -2" radius="0.05" height="0.5" color="pink"></a-cylinder>
+            <a-sphere position="0 2.5 -2" radius="0.2" color="yellow"></a-sphere> 
+            
+            <a-box position="0 1 -3" src="./images/brown_bg.jpeg" width="5" height="0.05"></a-box>           
+        </a-scene>
+    </body>
+</html>
